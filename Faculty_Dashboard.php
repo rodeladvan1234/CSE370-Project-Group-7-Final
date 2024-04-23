@@ -74,7 +74,7 @@ $stResult = mysqli_query($conn, $stQuery);
     <title>Faculty Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body { padding-top: 20px; background-color: #black; }
+        body { padding-top: 20px;}
         .dashboard { margin: auto; padding: 20px; max-width: 1000px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .hidden { display: none; }
 		.btn-danger {
@@ -87,10 +87,6 @@ $stResult = mysqli_query($conn, $stQuery);
 <body>
     <div class="dashboard">
         <h1>Faculty Dashboard</h1>
-        <!--<p>Welcome <strong><?php echo htmlspecialchars($facultyName); ?> (User ID: <?php echo htmlspecialchars($facultyUserId); ?>)</strong></p>-->
-
-
-			<!-- Rest of your dashboard HTML -->
 		<select id="viewSelector" class="form-control mb-4" onchange="toggleView()">
 			<option value="StudentList">Student List</option>
 			<option value="StudentTutor.php">Student Tutor List</option>
@@ -182,7 +178,6 @@ $stResult = mysqli_query($conn, $stQuery);
 		
 
         <!-- Student Tutor List View (initially hidden) -->
-<!-- Student Tutor List View -->
 		<div id="stListView" class="hidden">
 			<h2>Student Tutor List</h2>
 			<table class="table">
